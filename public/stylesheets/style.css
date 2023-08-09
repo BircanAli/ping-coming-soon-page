@@ -1,0 +1,117 @@
+@font-face {
+  font-family: "Libre-Franklin-700";
+  src: url("/src/assets/fonts/LibreFranklin-Bold.ttf");
+}
+@font-face {
+  font-family: "Libre-Franklin-600";
+  src: url("/src/assets/fonts/LibreFranklin-SemiBold.ttf");
+}
+@font-face {
+  font-family: "Libre-Franklin-300";
+  src: url("/src/assets/fonts/LibreFranklin-Light.ttf");
+}
+html {
+  font-size: 62.5%;
+  margin: 0;
+  padding: 0;
+  font-family: "Libre-Franklin-300", sans-serif;
+  box-sizing: border-box;
+}
+
+button {
+  border-style: none;
+  padding: 1rem 1rem;
+  background-color: hsl(223, 87%, 63%);
+  border-radius: 2rem 2rem;
+  color: white;
+  margin: auto 2rem;
+  width: 20rem;
+  cursor: pointer;
+}
+button:hover {
+  background-color: hsla(223, 87%, 63%, 0.623);
+  box-shadow: 2px 2px 8px hsla(223, 87%, 63%, 0.623);
+}
+
+.icons__container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.icons__container:first-child {
+  margin-right: 0;
+}
+.icons__container button {
+  text-align: center;
+  width: 5rem;
+  height: 5rem;
+  border-radius: 50% 50%;
+  background-color: white;
+  border: 0.5px solid hsla(0, 0%, 59%, 0.349);
+  box-shadow: none;
+}
+.icons__container button:hover {
+  background-color: hsl(223, 87%, 63%);
+}
+.icons__container button:hover svg {
+  color: white;
+}
+.icons__container button svg {
+  color: hsl(223, 87%, 63%);
+  font-size: 2rem;
+}
+
+input[type=text] {
+  border-radius: 2rem 2rem;
+  padding: 1rem 2rem;
+  border: 1px solid hsl(223, 100%, 88%);
+  width: 100%;
+}
+
+footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+footer .social-media-icons {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 2rem;
+  margin-bottom: 5rem;
+  font-size: 2rem;
+  line-height: 0.5;
+}
+header h1 {
+  color: hsl(0, 0%, 59%);
+}
+header h1 span {
+  color: black;
+  font-family: "Libre-Franklin-700";
+}
+header p {
+  margin-bottom: 5rem;
+}
+header .input__container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+main {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 10rem;
+}
+main .page-image {
+  max-width: 50rem;
+}/*# sourceMappingURL=style.css.map */
