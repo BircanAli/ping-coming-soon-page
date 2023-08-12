@@ -4,20 +4,19 @@ function Header() {
   const [input, setInput] = useState([]);
   const [isValid, setIsValid] = useState(true);
 
-  function validEmail(email) {
-    return email.match(
+  function validateEmail(email) {
+    let inputEmail = email.match(
       /^(([^<>()[\]\\.,;:\s@\"]+(\.[^<>()[\]\\.,;:\s@\"]+)*)|(\".+\"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/
     );
-  }
+    console.log(inputEmail);
 
-  function validateEmail(email) {
-    if (validEmail(email)) {
-      setIsValid(true), setInput(email);
+    if (!inputEmail) {
+      setIsValid(false), setInput(email);
     } else {
-      setIsValid(false);
+      setIsValid(true);
+      console.log("here");
     }
   }
-  //check functionality
 
   return (
     <header>
@@ -37,9 +36,14 @@ function Header() {
           className={!input || !isValid ? "alert" : ""}
           type="email"
           placeholder="Your email address..."
-          size={"40"}
+          // size={"40"}
           required
         />
+        {!input || !isValid ? (
+          <p className="alert__message">Please provide a valid email address</p>
+        ) : (
+          ""
+        )}
         <button type="submit">Notify Me</button>
       </div>
     </header>
