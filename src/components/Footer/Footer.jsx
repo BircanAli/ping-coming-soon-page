@@ -4,13 +4,13 @@ function Footer() {
   return (
     <footer>
       <section className="icons__container">
-        <button>
+        <button aria-label="icon">
           <Facebook />
         </button>
-        <button>
+        <button aria-label="icon">
           <Twitter />
         </button>
-        <button>
+        <button aria-label="icon">
           <Instagram />
         </button>
       </section>

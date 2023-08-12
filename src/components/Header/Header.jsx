@@ -45,7 +45,7 @@ function Header() {
         ) : (
           ""
         )}
-        <button type="submit">Notify Me</button>
+        <button>Notify Me</button>
       </div>
     </header>
   );
