@@ -1,13 +1,11 @@
+import mainImg from "../../assets/images/illustration-dashboard.png";
+
 function Main() {
   return (
     <main>
       <article>
         <figure>
-          <img
-            className="page-image"
-            src="images/illustration-dashboard.png"
-            alt="dashboard"
-          />
+          <img className="page-image" src={mainImg} alt="dashboard" />
         </figure>
       </article>
     </main>

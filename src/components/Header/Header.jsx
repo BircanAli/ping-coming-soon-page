@@ -1,4 +1,5 @@
 import { useState } from "react";
+import logo from "../../assets/images/logo.svg";
 
 function Header() {
   const [input, setInput] = useState([]);
@@ -21,7 +22,7 @@ function Header() {
   return (
     <header>
       <figure>
-        <img src="images/logo.svg" alt="ping svg logo" />
+        <img src={logo} alt="ping svg logo" />
       </figure>
 
       <h1>
